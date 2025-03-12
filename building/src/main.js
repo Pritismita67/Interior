@@ -65,7 +65,7 @@ function animateCamera() {
             gsap.to(camera.position, {
                 z: 20, // Move farther for a wider view
                 y: 15, // Adjust height for better framing
-                duration: 3,
+                duration: 4,
                 ease: "power2.inOut",
                 onUpdate: function () {
                     camera.lookAt(0, 5, 0); // Keep model in focus
