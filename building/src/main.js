@@ -65,7 +65,7 @@ function animateCamera() {
             gsap.to(camera.position, {
                 z: 20, // Move farther for a wider view
                 y: 15, // Adjust height for better framing
-                duration: 4,
+                duration: 3,
                 ease: "power2.inOut",
                 onUpdate: function () {
                     camera.lookAt(0, 5, 0); // Keep model in focus
@@ -83,7 +83,7 @@ function animateCamera() {
                         },
                         onComplete: function () {
                             let interiorTarget = { progress: 0 };
-                            let interiorRadius = 6; // Smaller radius for interior rotation
+                            let interiorRadius = 5; // Smaller radius for interior rotation
 
                             // Step 4: Full 360° orbit inside the ground floor
                             gsap.to(interiorTarget, {
