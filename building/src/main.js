@@ -83,7 +83,7 @@ function animateCamera() {
                         },
                         onComplete: function () {
                             let interiorTarget = { progress: 0 };
-                            let interiorRadius = 5; // Smaller radius for interior rotation
+                            let interiorRadius = 6; // Smaller radius for interior rotation
 
                             // Step 4: Full 360° orbit inside the ground floor
                             gsap.to(interiorTarget, {
